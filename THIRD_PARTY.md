@@ -4,7 +4,7 @@
 
 Michikuni Eguchi, Tomohiro Hayase, Yuichi Hiroi and Takefumi Hiraki. Dataset v5: https://doi.org/10.6084/m9.figshare.29438288.v5 . Associated article: https://doi.org/10.1038/s41597-026-06760-z . The recorded source metadata identifies CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
-The source release includes the public ZIP member index, not raw recordings. Processing averages duplicate timestamps, resamples central windows, estimates and aggregates axis-wise Welch spectra, and evaluates acquisition-condition holdouts. Downloaded ranges and archive-member CRCs do not establish a locally verified hash of the complete parent archive.
+The source release includes the public ZIP member index. `scripts/fetch_texture_metadata.py` retrieves the original `texture_list.xlsx` metadata workbook (118 specimen names and categories) with a small, verified HTTP range; the workbook and raw recordings are not bundled. The original upstream workbook retains its own Office document metadata. The workbook is attributed to the dataset creators above under CC BY 4.0; its SHA-256 is `6cd7dfc06e61852d49a2256d7fe8d44d222f3619f48fe9a4031f677d1b0eb4ff`, and its archive-member CRC32 is `4242404218`. Processing averages duplicate timestamps, resamples central windows, estimates and aggregates axis-wise Welch spectra, and evaluates acquisition-condition holdouts. Downloaded ranges and archive-member CRCs do not establish a locally verified hash of the complete parent archive.
 
 ## Multimodal Tactile Texture Dataset
 
@@ -14,7 +14,7 @@ The code uses IMU channels, explicit filtering/windowing and the recorded eligib
 
 ## Reference code
 
-The four files under `work/revision/vendor/cluster-official/` are pinned to commit `e05d6b022d127e24f73583146f0aa229c6934449`. Their original Apache-2.0 license and source notices are retained. The local ResNet34 experiment changes splits, preprocessing and training budget relative to that reference and does not reproduce its random-split benchmark.
+The four files under `work/revision/vendor/cluster-official/` are pinned to [upstream commit `e05d6b022d127e24f73583146f0aa229c6934449`](https://github.com/cluster-lab/Cluster-Haptic-Texture-Dataset/tree/e05d6b022d127e24f73583146f0aa229c6934449). Their original Apache-2.0 license and source notices are retained. They are a reference excerpt, not a runnable checkout of the upstream project: imports outside these four files are intentionally not bundled. The study CNN runs its own torchvision implementation; it does not execute this excerpt. The local ResNet34 experiment changes splits, preprocessing and training budget relative to that reference and does not reproduce its random-split benchmark.
 
 ## Pretrained initialization
 

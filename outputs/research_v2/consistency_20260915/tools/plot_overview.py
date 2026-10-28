@@ -10,6 +10,7 @@ from matplotlib.patches import FancyBboxPatch
 from matplotlib.lines import Line2D
 
 def main():
+    (ROOT/'figures').mkdir(parents=True,exist_ok=True)
     for name,info in json.loads((ROOT/'source_data/manifest.json').read_text()).items():
         assert hashlib.sha256((ROOT/'source_data'/name).read_bytes()).hexdigest()==info['sha256']
     rows=list(csv.DictReader((ROOT/'source_data/synthetic_summary.csv').open()))

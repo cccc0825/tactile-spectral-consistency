@@ -18,7 +18,7 @@ Original relative paths are preserved because the research programs resolve inpu
 
 ## Environment
 
-Use Python 3.12 in a separate environment. The dependency file records versions from the original study; availability and exact numerical behavior on another platform must be checked locally.
+Use Python 3.12 in a separate environment. The download audit was performed on macOS arm64; the acquisition code also requires `curl` and POSIX facilities (`fcntl` and `resource`). Native Windows execution has not been verified. The dependency file records versions from the original study; availability and exact numerical behavior on another platform must be checked locally.
 
 ```sh
 python3.12 -m venv .venv
@@ -26,9 +26,10 @@ source .venv/bin/activate
 python -m pip install -r outputs/research_v2/environment/requirements.txt
 ```
 
-For source metadata initialization (standard library only):
+Verify the downloaded files and initialize source metadata (standard library only):
 
 ```sh
+python scripts/verify_release.py
 python scripts/bootstrap_public.py
 ```
 
@@ -45,7 +46,15 @@ python outputs/research_v2/experiments/calibrator_diagnostic.py all \
   --run-dir outputs/research_v2/experiments/calibrator_diagnostic/run_reproduction_001
 ```
 
-The third command executes the guarded source-fitting and evaluation stages for the explicitly synthetic diagnostic, using its included frozen PSD fixture. Use a new run directory for every execution. Synthetic inputs and outcomes are not physical measurements.
+The third command executes the guarded source-fitting and evaluation stages for the explicitly synthetic diagnostic, using its included frozen PSD fixture. Use a new run directory for every execution. Synthetic inputs and outcomes are not physical measurements. Generate a table from that particular run with:
+
+```sh
+python scripts/make_synthetic_table.py \
+  --run-dir outputs/research_v2/experiments/calibrator_diagnostic/run_reproduction_001 \
+  --output-dir /tmp/tactile-synthetic-table-001
+```
+
+This adapter verifies the run files and computes the table from their predictions; it does not reuse historical acceptance records.
 
 Recompute the paired external specimen analysis from the two included, original 1,196-row prediction files:
 
@@ -70,11 +79,11 @@ The experiments concern held-out acquisition conditions on fixed specimen panels
 
 ## Full data and training workflow
 
-See [docs/REPRODUCTION.md](docs/REPRODUCTION.md) for acquisition, isolated source fits, target-stage requirements and the distinction between fresh training and archived-result replay. The full raw acquisition and CNN retraining workflow is not claimed to have been rerun for this source release.
+See [docs/REPRODUCTION.md](docs/REPRODUCTION.md) for the entry points and [docs/FULL_STUDY.md](docs/FULL_STUDY.md) for the ordered acquisition, source audit, target evaluation and manuscript-analysis dependencies. Use `scripts/prepare_study.py` to build the full source-only working tree; the original 36-file helper remains a legacy source-selection subset. The full raw acquisition and CNN retraining workflow is not claimed to have been rerun for this source release.
 
 ## Release validation
 
-The release checks passed 15 pipeline unit tests, the calibration algebra check, all synthetic diagnostic stages, the paired specimen replay and overview generation. The diagnostic reproduced all 576 target predictions and 10 CSVs byte for byte. Initial import/font-cache timeouts and successful retries are summarized in [release_metadata/validation.json](release_metadata/validation.json). These checks do not constitute a new full physical-data/CNN experiment.
+The release checks passed 15 pipeline unit tests, the calibration algebra check, all synthetic diagnostic stages, the paired specimen replay and overview generation. The diagnostic reproduced all 576 target predictions and 10 CSVs byte for byte. Initial import/font-cache timeouts and successful retries are summarized in [release_metadata/validation.json](release_metadata/validation.json). A second audit downloaded the public repository and installed the entire pinned requirements file in a new Python 3.12 environment. The same numerical checks passed; a missing figure-output directory was found and repaired. The additional metadata getter and synthetic-table entry point were executed successfully. Details, including the original failure, are in [release_metadata/download_validation.json](release_metadata/download_validation.json). These checks do not constitute a new full physical-data/CNN experiment.
 
 ## Sources and license scope
 

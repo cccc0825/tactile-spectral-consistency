@@ -1,0 +1,165 @@
+{
+  "timestamp_utc": "2026-10-28T12:13:14.686027+00:00",
+  "source": "fresh public GitHub clone a9895ac86b48dd779ada2e2ed9e4180064cbc925",
+  "environment": "new Python 3.12 venv, entire published pinned requirements installed",
+  "runs": [
+    {
+      "name": "pipeline",
+      "command": [
+        "python",
+        "outputs/research/experiments/test_pipeline.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.934,
+      "log": "download_pipeline.log",
+      "log_sha256": "a5a055545fe381b6b147ef1d2aa5116c5de77bff974dc0b2efaab204250f12e5"
+    },
+    {
+      "name": "algebra",
+      "command": [
+        "python",
+        "outputs/research_v2/experiments/response_calibration.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.882,
+      "log": "download_algebra.log",
+      "log_sha256": "b3bbb750cabc50392e8c2a6fdd5286d82924708753158b9f10b57d422f714d48"
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "python",
+        "outputs/research_v2/experiments/calibrator_diagnostic.py",
+        "all",
+        "--run-dir",
+        "outputs/research_v2/experiments/calibrator_diagnostic/run_reproduction_001"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 37.554,
+      "log": "download_synthetic.log",
+      "log_sha256": "afad4234ed0e97dcfb1eaab5d316dad58573605769f2c81a7bba28e50981a697"
+    },
+    {
+      "name": "specimen",
+      "command": [
+        "python",
+        "outputs/research_v2/revision_20260914/tools/replay_specimen_influence.py",
+        "NEW_SPECIMEN_REPLAY_DIRECTORY"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 26.127,
+      "log": "download_specimen.log",
+      "log_sha256": "96ae3c90238a3e900748c4212d059ca8fd08a0455a5ca1618a889254fefbd193"
+    },
+    {
+      "name": "overview",
+      "command": [
+        "python",
+        "outputs/research_v2/consistency_20260915/tools/plot_overview.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 17.737,
+      "log": "download_overview.log",
+      "log_sha256": "66dc3f773456a8db6a56ede6dd70168dbc0c3b96cfe2b3e1c0b15a992c67d1af"
+    },
+    {
+      "name": "package_check",
+      "command": [
+        "python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.673,
+      "log": "download_package_check.log",
+      "log_sha256": "da3ee94cfaa349a46ad780db1855250d6151cec7e34d4ec4b13d4786487eb412"
+    },
+    {
+      "name": "cnn_import",
+      "command": [
+        "python",
+        "-c",
+        "import torch,torchvision; from torchvision.models import resnet34; model=resnet34(weights=None); print(torch.__version__,torchvision.__version__,len(list(model.parameters())))"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.154,
+      "log": "download_cnn_import.log",
+      "log_sha256": "63024809c6705b826addb5544ff28606c8314238fa1d140e1b3f33b2bb9e4442"
+    }
+  ],
+  "status": "passed_after_packaging_repair",
+  "original_plot_failure": "Missing figures directory in a fresh clone. Added mkdir in public plotting script; retry produced PDF, PNG and SVG.",
+  "full_physical_data_or_cnn_training_executed": false,
+  "original_numerical_comparison": {
+    "csv_byte_comparisons": {
+      "B/all_target_predictions.csv": true,
+      "B/per_template.csv": true,
+      "B/per_template_speed.csv": true,
+      "B/predictions/ideal_corrected.csv": true,
+      "B/predictions/ideal_spatial.csv": true,
+      "B/predictions/ideal_temporal.csv": true,
+      "B/predictions/lowpass_200Hz_corrected.csv": true,
+      "B/predictions/lowpass_200Hz_spatial.csv": true,
+      "B/predictions/lowpass_200Hz_temporal.csv": true,
+      "summary.csv": true
+    },
+    "target_prediction_rows": 576
+  },
+  "repairs_verified": {
+    "overview_plot": {
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "artifacts": [
+        "overview.pdf",
+        "overview.png",
+        "overview.svg"
+      ]
+    },
+    "texture_metadata": {
+      "status": "downloaded_and_verified",
+      "created_utc": "2026-10-28T12:16:12.596631+00:00",
+      "url": "https://ndownloader.figshare.com/files/61118716",
+      "member": "cluster_haptic_texture_dataset/texture_list.xlsx",
+      "http_range": [
+        8534231,
+        8550848
+      ],
+      "downloaded_bytes": 16618,
+      "workbook_bytes": 19016,
+      "sha256": "6cd7dfc06e61852d49a2256d7fe8d44d222f3619f48fe9a4031f677d1b0eb4ff",
+      "member_crc32": 4242404218,
+      "license": "CC BY 4.0; attribution in THIRD_PARTY.md",
+      "scope": "Original upstream file, including its original Office metadata; full archive hash not verified."
+    },
+    "synthetic_table": {
+      "exit_code": 0,
+      "target_predictions": 576,
+      "output_rows": 8,
+      "historical_acceptance_reused": false
+    }
+  },
+  "environment_installation": {
+    "fresh_venv": true,
+    "all_published_requirement_pins_installed": true,
+    "pip_check": "No broken requirements found.",
+    "platform": "macOS arm64",
+    "python": "3.12.14",
+    "install_log_sha256": "d1e7b6f2816cb1dc4fe7f6c723edc21b99580b97061d1c59398f84bc119905c1",
+    "initial_failure": "Network access unavailable before permission grant; preserved locally."
+  },
+  "pending_scope": "Full raw-data/CNN retraining was not executed. Full source-tree preparation and gate guard tests checked separately; they do not establish training success.",
+  "guard_tests": {
+    "source_audit_guards": 12,
+    "synthetic_table_guards": 10,
+    "status": "pass",
+    "scope": "Deterministic guard logic on temporary fixtures; not scientific data revalidation."
+  },
+  "full_source_preparation": {
+    "status": "pass",
+    "source_subset_retained": 36,
+    "reference_targets_relocated": true,
+    "historical_acceptance_copied": false,
+    "training_executed": false
+  }
+}
