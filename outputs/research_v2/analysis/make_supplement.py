@@ -45,6 +45,16 @@ def esc(value):
     return text.replace('&', r'\&').replace('_', r'\_').replace('%', r'\%')
 
 
+def primary_caption(support):
+    if support is True:
+        return ('The primary benefit criterion was met, so calibrated-minus-log-mel '
+                'is eligible for the predeclared secondary comparison. ')
+    if support is False:
+        return ('The primary benefit criterion was not met, so calibrated-minus-log-mel '
+                'remains descriptive; its secondary gate did not open. ')
+    return 'The primary comparison is unavailable; its secondary gate has not opened. '
+
+
 def table(name, caption, headers, rows, align=None):
     align = align or ('l' + 'r' * (len(headers) - 1))
     h = ' & '.join(esc(x) for x in headers) + r' \\'
@@ -110,8 +120,8 @@ def main(require_complete=False):
                      f'{r.specimens_improved}/{r.specimens_worsened}/{r.specimens_tied}'])
     table('contrasts', r'All revision speed contrasts (percentage points). $+/-/=$ counts specimens '
           r'with larger/smaller/equal recall. Limits are the 2.5th and 97.5th percentiles of conditional '
-          r'specimen reweighting. Only Lima calibrated-minus-spatial is the locked primary. Its benefit '
-          r'criterion failed, so calibrated-minus-log-mel remains descriptive; its secondary gate did not open. '
+          r'specimen reweighting. Only Lima calibrated-minus-spatial is the locked primary. ' +
+          primary_caption(report['external_primary_support']) +
           r'All other intervals are descriptive. Cluster repeat checks share specimens and targets.',
           ['Set', 'Contrast', 'Difference', 'Conditional interval', '+/-/='], rows, 'llrll')
     old = read_csv(OLD / 'analysis/scores.csv')

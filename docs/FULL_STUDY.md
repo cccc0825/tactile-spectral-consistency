@@ -1,8 +1,8 @@
 # Fresh full-study dependency map
 
-This workflow prepares every published source dependency, acquires public inputs, and separates source fitting, technical audits, target release and analysis. It is a runnable procedure for a **new study run**, not evidence that the full raw-data/CNN workflow has been rerun for this release. Numerical equivalence across environments must be checked; failed checks remain failures. Source/target settings and the original numerical producers are unchanged.
+This workflow prepares every published source dependency, acquires public inputs, and separates source fitting, technical audits, target release and analysis. It is a procedure for a **new study run**. A public-clone execution completed all stages on Python 3.12/macOS arm64; its [validation receipt](../release_metadata/full_study_validation.json) records the tested environment, resource allowance, 239 matching scientific artifact comparisons and five inaccessible historical reference files. Numerical equivalence across other environments must still be checked; failed checks remain failures. Source/target settings and the original numerical producers are unchanged.
 
-Use Python 3.12, the recorded dependencies, a macOS/Linux environment with `curl`, sufficient disk for multi-GB recordings/tensors/checkpoints, and the original compute limits. CUDA training is not implemented by this trainer: it selects Apple MPS when available, otherwise CPU. A slower machine may hit a frozen time or memory limit. Preserve that failure; do not extend a limit while calling the run an exact execution of the old protocol.
+Use Python 3.12, the recorded dependencies, a macOS/Linux environment with `curl`, sufficient disk for multi-GB recordings/tensors/checkpoints, and the documented compute limits. CUDA training is not implemented by this trainer: it selects Apple MPS when available, otherwise CPU. A slower machine may hit a frozen time or memory limit. Preserve any failure. If source-only throughput indicates that more local CPU time is needed, use the separately recorded [reproduction resource allowance](REPRODUCTION_RESOURCES.md) before target evaluation; a run exceeding 180 minutes is not a reproduction of the historical runtime bound.
 
 ## 1. Prepare all sources in a new directory
 
@@ -41,7 +41,7 @@ Replace `STAGE` with one table entry at a time, in order. Each call records its 
 | 7 | `extract-cluster-cnn` | CNN tensors/labels/manifest |
 | 8 | Download the initialization below | Original ResNet34 initialization |
 | 9 | `configure-cluster-cnn` | Hash-bound tensor/split/training configuration |
-| 10 | `select-cluster-cnn` | Source CV and all three final CNN models |
+| 10 | Defer `select-cluster-cnn` until section 3 configuration is complete | Both configurations must exist before CNN training; the external configuration initializes the shared 180-minute allowance |
 
 Download the original initialization into this fresh tree, then verify the entire SHA-256 before configuration:
 
@@ -54,7 +54,7 @@ python outputs/research_v2/tools/prepare_fresh_run.py check \
 
 The resulting preflight receipt must report `imagenet_weights.hash_matches: true`. Expected SHA-256: `b627a593bcbe140c234610266fe4f8ae95ea42fc881d091c9b6052e6b1d0590f`. The source helper prints its receipt path. Read that receipt; its generic `source_setup_passed` status alone does not establish that weights or datasets exist.
 
-Before Cluster CNN target evaluation, compute the saved-model source diagnostic:
+After both source CNN selections in section 3, and before any target evaluation, compute the Cluster saved-model source diagnostic:
 
 ```sh
 python outputs/research_v2/experiments/cnn/source_eval_audit.py \
@@ -74,7 +74,9 @@ python outputs/research_v2/experiments/cnn/source_eval_audit.py \
 | 7 | Handoff extension command below | Per-class source-fold counts required by the original data audit |
 | 8 | `configure-external-cnn` | New external configuration; same recorded compute addendum |
 | 9 | `select-external-svm` | Nine source-only SVM selections and models |
-| 10 | `select-external-cnn` | Source CV and three final CNN models |
+| 10 | Run `select-cluster-cnn`, then `select-external-cnn`, serially | Source CV and all three final CNN models for each dataset |
+
+Complete both CNN configurations before step 10. For a slower machine, the optional [resource allowance command](REPRODUCTION_RESOURCES.md) belongs after step 8 and before either CNN selection, with no running ledger writer. The two selections and later source audits/evaluations share one ledger and must run serially.
 
 Execute step 7 **before** external CNN configuration:
 
@@ -101,7 +103,7 @@ Successful commands create **new local technical receipts**, with the actual sub
 
 ## 4. Freeze, release and execute target evaluation
 
-All data/source audits above must succeed. Inspect their new receipts and keep all outcomes, including losses. The original global seal is still required:
+All data/source audits above must succeed. Inspect their new receipts and keep all outcomes, including losses. If a reproduction resource allowance was applied, run its `check --pre-target` command now and preserve the output before writing the global seal. The original global seal is still required:
 
 ```sh
 python outputs/research_v2/research/seal_external_models.py
@@ -173,5 +175,19 @@ python scripts/make_synthetic_table.py \
 Use a new output directory and retain the adapter's input/result verification records. This table comes from the actual completed run; no methodological acceptance is invented or required merely to render its recorded values. Review the simulation's protocol, truth-alignment boundaries and statistical scope before using its results in scientific conclusions.
 
 The historical `analysis/make_calibrator_artifacts.py` and `tools/check_calibrator_clean_replay.py` are archived-study adapters with historical paths and receipt dependencies. They are not the new-run table entrypoint and should not be made runnable by copying an old acceptance receipt into this tree.
+
+## 7. Current-run specimen analysis and figures
+
+After the complete external target stages and the synthetic run above, generate the latest specimen analysis and overview from this run's sealed predictions:
+
+```sh
+python scripts/test_fresh_analysis.py
+python scripts/analyze_fresh_results.py \
+  --project-root /tmp/tactile-full-study-001 \
+  --synthetic-run-dir /tmp/tactile-full-study-001/outputs/research_v2/experiments/calibrator_diagnostic/run_001 \
+  --output-dir /tmp/tactile-fresh-figures-001
+```
+
+[Fresh-result details](FRESH_RESULTS.md) describe the exact bindings, paired bootstrap, complete specimen retention and new outputs. The figure adapter checks the external SVM targets it actually uses; its success does not replace CNN target completion or the other full-study stages. A different sign or magnitude is retained and reported. Do not copy historical plotting tables into fresh result directories.
 
 This repository publishes the research programs and compact evidence, not a complete historical archive or the paper/template sources. `tools/portable_reproduce.py` still requires the separate full archived prediction/model package. Successful preparation or guard tests alone do not establish full experimental reproduction, independent review, or a submission-ready manuscript.

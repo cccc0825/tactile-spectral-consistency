@@ -1,11 +1,16 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "scope": "Packaging and public reproduction repairs; original research archive unchanged.",
   "original_source_adaptations": {
     "outputs/research_v2/consistency_20260915/tools/plot_overview.py": {
       "original_sha256": "28c4d095876527067ecd52be703d312d682a8a538c6581469c7293ca848f432d",
       "published_sha256": "4ff536b8fbe45bd709924b4bed43a60c194c0f63151c97b856f23c34a2e42661",
       "change": "Create figures directory before saving; numerical inputs and figure content unchanged."
+    },
+    "outputs/research_v2/analysis/make_supplement.py": {
+      "original_sha256": "a7c2cec0a89258b199583c882630d75d2737f0bed60a1f761a56e766388ff65e",
+      "published_sha256": "113338cb37cc78bbed16722f3f86a63f25de0b781b58fe60eae52a671350e74e",
+      "change": "Generate the primary-contrast caption from the current report instead of assuming a failed criterion; numerical calculations unchanged."
     }
   },
   "added_dependencies": [
@@ -16,7 +21,10 @@
     "scripts/prepare_study.py",
     "scripts/accept_source_audits.py",
     "scripts/make_synthetic_table.py",
-    "scripts/fetch_texture_metadata.py"
+    "scripts/fetch_texture_metadata.py",
+    "scripts/analyze_fresh_results.py",
+    "scripts/reproduction_resources.py"
   ],
-  "fresh_scope": "Published outcome files are reference-only; full-study preparation relocates them outside active experiment paths. Local technical audit receipts require actual new producer execution and are not independent peer review."
+  "fresh_scope": "Published outcome files are reference-only; full-study preparation relocates them outside active experiment paths. Local technical audit receipts require actual new producer execution and are not independent peer review.",
+  "resource_scope": "Optional separately recorded reproduction time allowance; original protocols, fixed numerical operations and all consumed time retained. Not evidence of executing within the historical runtime cap."
 }

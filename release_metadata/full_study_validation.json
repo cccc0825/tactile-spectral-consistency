@@ -1,0 +1,2126 @@
+{
+  "created_utc": "2026-10-28T17:16:52.786271+00:00",
+  "status": "full_workflow_completed_with_reference_archive_comparison_limits",
+  "full_physical_data_and_cnn_training_executed": true,
+  "scope": "New public-data acquisition, preprocessing, all fixed source fits, technical audits, sealed target inference, original controls, synthetic diagnostics and result generation. This verifies execution/reproduction, not new independent physical specimens or scientific benefit.",
+  "source_checkout": "37c398c864dbb49c854ad4e54fa4362e88f4a3fc",
+  "final_release_source_relation": {
+    "unchanged_prepared_python_files": 47,
+    "changed_renderer_executed_separately": [
+      "outputs/research_v2/analysis/make_supplement.py"
+    ],
+    "numerical_producers_changed": false,
+    "new_adapters_executed": [
+      "scripts/reproduction_resources.py",
+      "scripts/analyze_fresh_results.py"
+    ],
+    "new_release_preparation_check": "106-file source-only tree prepared and manifest verified before final documentation was added"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "torch": "2.8.0",
+    "torchvision": "0.23.0",
+    "threads": 2,
+    "interop_threads": 2,
+    "mps_available": false,
+    "mps_built": true,
+    "deterministic_algorithms": true
+  },
+  "environment_installation": "All pinned dependencies in a separate Python 3.12 environment; no historical model or target prediction copied into the new active study.",
+  "dataset_counts": {
+    "cluster_records": 18880,
+    "cluster_specimens": 118,
+    "cluster_public_range_files": 119,
+    "external_raw_episodes": 3600,
+    "external_range_blocks": 444,
+    "external_invalid_excluded": 49,
+    "external_duplicate_excluded": 1,
+    "external_eligible": 3550,
+    "external_source": 2354,
+    "external_target": 1196,
+    "external_specimens": 12
+  },
+  "training": {
+    "cluster_svm_models": 18,
+    "external_svm_models": 9,
+    "cnn_cv_runs_per_dataset": 9,
+    "cnn_final_seeds_per_dataset": 3,
+    "cluster_cnn_epochs": 69,
+    "external_cnn_epochs": 72,
+    "external_source_audit_cv_refits": 405,
+    "external_source_audit_final_refits": 9
+  },
+  "resource_verification": {
+    "status": "resource_chain_valid",
+    "check_scope": "resources only; not proof of scientific completion or process inactivity",
+    "original_limit_seconds": 10800,
+    "effective_limit_seconds": 21600,
+    "consumed_seconds": 9514.24159591482,
+    "original_180_minutes_exceeded": false,
+    "allowance_sha256": "086282f68b97a65d2b579f9d32b15e7b7e222ebf998adff4edcbb6923f02d540",
+    "pre_target_checked": false,
+    "failed_sessions": 0
+  },
+  "resource_note": "One separate six-hour reproduction allowance was recorded before fresh target evaluation, preserving all prior time and the original 180-minute protocol. Actual total CNN active time was 9514.2416 seconds (158.57 minutes), below 180 minutes. The configured allowance was nevertheless different; no extra search, seeds or experiments were added.",
+  "fresh_integrity": {
+    "status": "pass",
+    "checks": 1325,
+    "hashes_checked": 836,
+    "all_42_stage_receipts_verified": true
+  },
+  "numerical_comparison": {
+    "tolerances": {
+      "atol": 1e-10,
+      "rtol": 1e-10,
+      "identity_and_integer_prediction": "exact",
+      "row_order": "preserved"
+    },
+    "matched_artifacts": 239,
+    "mismatched_artifacts": 0,
+    "unavailable_archive_artifacts": [
+      "outputs/research/analysis/posthoc_summary.json",
+      "outputs/research/experiments/selection/split_manifest.json",
+      "outputs/research_v2/paper/calibrator_numbers.tex",
+      "outputs/research_v2/paper/main_table.tex",
+      "outputs/research_v2/revision_20260914/analysis/specimen_influence_numbers.tex"
+    ],
+    "unavailable_reason": "Five original locally offloaded archive files timed out on both 5-second and 20-second bounded reads. Their fresh outputs exist; these five old-file comparisons are not claimed as verified. This is a reference-archive access limitation, not a missing source dependency in the public workflow.",
+    "all_comparisons": [
+      {
+        "path": "outputs/research/analysis/aggregate_accuracy.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/all_specimen_speed_effects.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/category_scores.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/confusion_counts.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/contrasts.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/costs.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/per_specimen_scores.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/posthoc_grid_contrasts.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/posthoc_grid_scores.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/posthoc_summary.json",
+        "operation": "json",
+        "status": "comparison_unavailable"
+      },
+      {
+        "path": "outputs/research/analysis/report.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/scores.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/speed_breakdown.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/analysis/speed_confusions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C100_g0.25_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C100_g0.25_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C100_g1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C100_g1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C100_g4_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C100_g4_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C10_g0.25_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C10_g0.25_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C10_g1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C10_g1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C10_g4_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C10_g4_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C1_g0.25_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C1_g0.25_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C1_g1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C1_g1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C1_g4_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat0_C1_g4_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C100_g0.25_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C100_g0.25_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C100_g1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C100_g1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C100_g4_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C100_g4_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C10_g0.25_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C10_g0.25_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C10_g1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C10_g1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C10_g4_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C10_g4_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C1_g0.25_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C1_g0.25_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C1_g1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C1_g1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C1_g4_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/posthoc_grid/repeat1_C1_g4_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_dual.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_endpoint_union.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_mel.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_metadata.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_partial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_spatial_gain.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat0_temporal_gain.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_dual.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_endpoint_union.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_mel.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_metadata.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_partial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_spatial_gain.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode0_repeat1_temporal_gain.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode1_repeat0_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode1_repeat0_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode1_repeat1_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/mode1_repeat1_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_+0.05_partial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_+0.05_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_+0.10_partial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_+0.10_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_-0.05_partial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_-0.05_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_-0.10_partial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/raw_results/perturb_-0.10_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/selection/selected_models.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research/experiments/selection/split_manifest.json",
+        "operation": "json",
+        "status": "comparison_unavailable"
+      },
+      {
+        "path": "outputs/research_v2/analysis/alignment_per_specimen.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/alignment_summary.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/contrasts.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/main_table_values.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/numeric_lineage.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/prediction_costs.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/report.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/scores.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/signed_speed_error.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/source_cv_folds.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/specimen_recalls.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/analysis/synthetic_diagnostics.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/data/external/processed/metadata.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_corrected_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_corrected_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_corrected_strong_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_corrected_strong_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_corrected_weak_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_corrected_weak_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_mel_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_mel_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_mfcc_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_mfcc_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_pooled_whitening_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_pooled_whitening_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_spatial_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_spatial_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_split.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_temporal_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_temporal_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_wrong_order_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat0_wrong_order_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_corrected_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_corrected_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_corrected_strong_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_corrected_strong_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_corrected_weak_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_corrected_weak_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_mel_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_mel_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_mfcc_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_mfcc_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_pooled_whitening_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_pooled_whitening_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_spatial_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_spatial_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_split.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_temporal_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_temporal_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_wrong_order_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/repeat1_wrong_order_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/cluster/selected.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_corrected_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_corrected_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_corrected_strong_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_corrected_strong_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_corrected_weak_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_corrected_weak_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_mel_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_mel_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_mfcc_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_mfcc_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_pooled_whitening_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_pooled_whitening_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_spatial_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_spatial_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_split.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_temporal_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_temporal_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_wrong_order_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/external40_wrong_order_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibration/external/selected.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/A/Cluster_corrected.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/A/Lima_corrected.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/all_target_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/features/ideal_corrected.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/features/ideal_spatial.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/features/ideal_temporal.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/features/lowpass_200Hz_corrected.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/features/lowpass_200Hz_spatial.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/features/lowpass_200Hz_temporal.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/per_template.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/per_template_speed.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/predictions/ideal_corrected.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/predictions/ideal_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/predictions/ideal_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/predictions/lowpass_200Hz_corrected.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/predictions/lowpass_200Hz_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/B/predictions/lowpass_200Hz_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/responses/A_Cluster.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/responses/A_Lima.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/responses/B_ideal.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/responses/B_lowpass_200Hz.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/summary.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/summary.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/source/B/candidates.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/source/B/cv_predictions.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/source/B/selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.0001_fold30_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.0001_fold40_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.0001_fold50_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.0003_fold30_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.0003_fold40_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.0003_fold50_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.001_fold30_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.001_fold40_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/cv_lr0.001_fold50_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/predictions/seed20270913.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/predictions/seed20270913_logits.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/predictions/seed20270914.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/predictions/seed20270914_logits.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/predictions/seed20270915.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/predictions/seed20270915_logits.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/source_eval_audit.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/source_eval_seed20270913.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/source_eval_seed20270914.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/source_eval_seed20270915.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster/summary.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/cluster_metadata.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.0001_fold0_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.0001_fold1_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.0001_fold2_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.0003_fold0_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.0003_fold1_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.0003_fold2_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.001_fold0_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.001_fold1_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/cv_lr0.001_fold2_seed20270913_validation.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/predictions/seed20270913.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/predictions/seed20270913_logits.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/predictions/seed20270914.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/predictions/seed20270914_logits.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/predictions/seed20270915.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/predictions/seed20270915_logits.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/source_eval_audit.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/source_eval_seed20270913.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/source_eval_seed20270914.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/source_eval_seed20270915.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/cnn/external/summary.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/real_selection.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat0_common_band_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat0_common_band_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat0_fixed_space_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat0_fixed_space_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat1_common_band_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat1_common_band_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat1_fixed_space_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/repeat1_fixed_space_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/synthetic_ideal_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/synthetic_ideal_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/synthetic_lowpass_200Hz_spatial.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/synthetic_lowpass_200Hz_temporal.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/synthetic_results.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/experiments/diagnostics/synthetic_signals_psd.npz",
+        "operation": "npz",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/paper/calibrator_numbers.tex",
+        "operation": "tex_macros",
+        "status": "comparison_unavailable"
+      },
+      {
+        "path": "outputs/research_v2/paper/main_table.tex",
+        "operation": "text",
+        "status": "comparison_unavailable"
+      },
+      {
+        "path": "outputs/research_v2/paper/numbers.tex",
+        "operation": "tex_macros",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/research/external_validity_decision.json",
+        "operation": "json",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/revision_20260914/analysis/per_specimen_effects.csv",
+        "operation": "csv",
+        "status": "match"
+      },
+      {
+        "path": "outputs/research_v2/revision_20260914/analysis/specimen_influence_numbers.tex",
+        "operation": "tex_macros",
+        "status": "comparison_unavailable"
+      }
+    ]
+  },
+  "new_external_primary": {
+    "status": "post-hoc descriptive influence analysis of the specified completed run",
+    "n_target_acquisitions": 1196,
+    "n_specimens": 12,
+    "corrected_macro_recall_pct": 12.592626949769807,
+    "spatial_macro_recall_pct": 13.25,
+    "all12_difference_pp": -0.6573730502301928,
+    "conditional_interval_pp": [
+      -6.49323249501821,
+      4.506797996976568
+    ],
+    "resampling_seed": 20270913,
+    "resampling_draws": 10000,
+    "interval_scope": "paired physical-specimen recalls conditional on saved models and empirical panel; not future-specimen or retraining uncertainty",
+    "specimen_signs": {
+      "improved": 6,
+      "worsened": 3,
+      "tied": 3
+    },
+    "primary_support": false,
+    "primary_rule": "difference >= 3 pp and conditional lower bound > 0; unchanged",
+    "leave_one_specimen_out_range_pp": [
+      -2.3534978729783926,
+      1.7374112179306984
+    ],
+    "removals_changing_sign": [
+      1,
+      8
+    ],
+    "all_specimens_retained": true,
+    "fitting_performed": false,
+    "limitations": [
+      "Post-hoc influence; no specimen is excluded.",
+      "Technical verification is not independent peer review.",
+      "No new material-instance or isolated-session validation."
+    ]
+  },
+  "synthetic_summary": "All 576 saved target predictions and the synthetic diagnostic numerical artifacts were compared; ideal 100.00→86.46%, low-pass 54.17→81.25%. Synthetic results remain separate from recorded physical data.",
+  "fresh_outputs": {
+    "figures": {
+      "figure_source_data.json": "b691db84a815cd4bb3050c2f4eabfd3498caa749d0bae48c0961cfc2ba226fee",
+      "overview.pdf": "66e5aac5f2ff3483330d627b0f8065193727db3de2760dc7d3a9031bf5caac7e",
+      "overview.png": "231c36e5c5c712fefb26f95043f58632ede69f45470b0beae814a0e730bb2fd6",
+      "overview.svg": "6fa1451072a1dcad29ab16e435a9d08f825ef8e2ef97375133c8915a10a85e42",
+      "per_specimen_effects.csv": "5b804edf324861c5026d4de16964190065abc7871e045d4721f20180b18aeae7",
+      "specimen_influence.pdf": "39c325c5bc6b03027b91b5f4f97adbc773bed257ff0dc4f75cac32563c7f3c9e",
+      "specimen_influence.png": "22beee19376801abc70e845b3e41044ad651443d2685cf813d45a8801dfc923d",
+      "specimen_influence.svg": "6223ba67e8d04c03956ffae5319b1db0ac03a3cf9e6c8cb79f56db6f477ac6ef",
+      "specimen_influence_numbers.tex": "1454da1342502efbf4df9ade572eaf91b43fe18ab3db47bca69c5736cbe7639e",
+      "specimen_influence_table.tex": "648566a27f30d674db3e23b766786156e01cccfb3aca1f423832ebe27b6ac9b9",
+      "summary.json": "d0f484092604c86877842d4b9134eb140edec260b177697b9c6f4f3eebc1e2bb"
+    },
+    "main_table_sha256": "2f23ddcc5ab9cbe81ca1527e12b34c81582ff306e149e6985e209e3120049856",
+    "main_numeric_macros_sha256": "47e06c23aaf61bd19a06285db60aa8ea6b85c2f9fb4911014b36bd70721cb1a5",
+    "supplement_receipt_sha256": "dbb1d1e2fcedf9edfa5ea56c448df9b46edf97b45ea940c16a07cc8720dacd7c"
+  },
+  "preserved_technical_events": [
+    "Initial network-unavailable acquisition attempts were retained and retried after connectivity was available.",
+    "External extraction deliberately stopped for the original QC disposition; 49 invalid and one duplicate episode were excluded under the unchanged policy.",
+    "No training or target-inference failure occurred in the completed run.",
+    "Historical audit reports and the five reference-read timeouts were not erased or relabeled as passes."
+  ],
+  "stage_runs": [
+    {
+      "name": "extract-cluster",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 300.4374513339717,
+      "started_utc": "2026-10-28T13:54:46.681666+00:00",
+      "ended_utc": "2026-10-28T13:59:47.129105+00:00",
+      "log_sha256": "eda2752513d0a226a0dad713e9f798a255fbbc8292d7e4a1c6202b0d5e57f0b9",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "extract-cluster"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "verify-cluster",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 10.017635749885812,
+      "started_utc": "2026-10-28T13:59:47.151425+00:00",
+      "ended_utc": "2026-10-28T13:59:57.172900+00:00",
+      "log_sha256": "2c62fffdb36fc6f1ed3bd710f26a2382cdeb389d50f9a6ca6b3733a0265970c3",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/experiments/verify_data.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "audit-positions",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.011998000089079,
+      "started_utc": "2026-10-28T13:59:57.191833+00:00",
+      "ended_utc": "2026-10-28T14:00:02.206917+00:00",
+      "log_sha256": "62940ef0b21f0029db2ace0433da32f04f1641e692d25f698b8649f7c375a906",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/experiments/audit_positions.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "extract-fixed-space",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 300.2807314170059,
+      "started_utc": "2026-10-28T14:00:02.211187+00:00",
+      "ended_utc": "2026-10-28T14:05:02.495031+00:00",
+      "log_sha256": "1a4cb15e0f3014ea1ee59f32012330f1c26092936eec18e231a87bde44e249a1",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "extract-fixed-space"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "select-cluster-svm",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 100.10677283303812,
+      "started_utc": "2026-10-28T14:05:02.513796+00:00",
+      "ended_utc": "2026-10-28T14:06:42.624503+00:00",
+      "log_sha256": "6d3a993c90f94432a497d246d3c96b6e7c0d8ee7760bad152cf0935474e9f36d",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "select-cluster-svm"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "extract-cluster-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 310.34156624996103,
+      "started_utc": "2026-10-28T14:06:42.629889+00:00",
+      "ended_utc": "2026-10-28T14:11:52.973133+00:00",
+      "log_sha256": "8e8bea5b6346a64f784293f4ae5ea3e5b80a76f422777fd66158af92e1284a72",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "extract-cluster-cnn"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "configure-cluster-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.011166040785611,
+      "started_utc": "2026-10-28T14:11:52.986274+00:00",
+      "ended_utc": "2026-10-28T14:11:58.000043+00:00",
+      "log_sha256": "835dd15a18aaf9a3c160525cabd73315533014e0a093a4d2ce53878bb23fbe0e",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "configure-cluster-cnn"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "smoke-external",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.022977832937613,
+      "started_utc": "2026-10-28T14:11:58.001561+00:00",
+      "ended_utc": "2026-10-28T14:12:03.025924+00:00",
+      "log_sha256": "bab72ac5e04408b7fd424f6b60d58e6bff6b5b856f00dbb99f56c86176eba4dc",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "smoke-external"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "extract-external",
+      "status": "complete",
+      "exit_code": 2,
+      "elapsed_seconds": 50.05688141682185,
+      "started_utc": "2026-10-28T14:12:03.033884+00:00",
+      "ended_utc": "2026-10-28T14:12:53.092273+00:00",
+      "log_sha256": "3f6af1cac4eae0460728a84d233144b6715392c8d996a413de39dfb8ab365005",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "extract-external"
+      ],
+      "expected_qc_stop": true
+    },
+    {
+      "name": "external-qc-decision",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.008511916967109,
+      "started_utc": "2026-10-28T14:12:53.102345+00:00",
+      "ended_utc": "2026-10-28T14:12:58.112701+00:00",
+      "log_sha256": "db32a351a034c147bd2e25e0529dbdcc123e0e9f2cbe78f2338cf80f9161c6cd",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "external-qc-decision"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "publish-external",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 50.08682745904662,
+      "started_utc": "2026-10-28T14:12:58.114119+00:00",
+      "ended_utc": "2026-10-28T14:13:48.201629+00:00",
+      "log_sha256": "e65d18ce2fc869ed98ce8e4993885402e91e292318ae3159e27dfa7d6e1c9429",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "publish-external"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "external-handoff",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.009401750052348,
+      "started_utc": "2026-10-28T14:13:48.209109+00:00",
+      "ended_utc": "2026-10-28T14:13:53.221450+00:00",
+      "log_sha256": "b72f10b3bfaed32d33a59a4a7b737376e2a79f4fba0539d681bc973bcc8eed04",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "external-handoff"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "augment-external-handoff",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.009356958093122,
+      "started_utc": "2026-10-28T14:13:53.223354+00:00",
+      "ended_utc": "2026-10-28T14:13:58.233548+00:00",
+      "log_sha256": "74b387313700c162702e7f3296afb473e103f9188e1ce3ab47b8e0d8860d8696",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/prepare_study.py",
+        "augment-handoff",
+        "--project-root",
+        "<STUDY_ROOT>"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "configure-external-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 10.647469207877293,
+      "started_utc": "2026-10-28T14:13:58.235163+00:00",
+      "ended_utc": "2026-10-28T14:14:08.884169+00:00",
+      "log_sha256": "be04e9861cceaf0c4bd34f505d62587482f136c30fdee630d49d47a227213d04",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "configure-external-cnn"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "select-external-svm",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 100.08996558305807,
+      "started_utc": "2026-10-28T14:14:08.899809+00:00",
+      "ended_utc": "2026-10-28T14:15:48.993003+00:00",
+      "log_sha256": "7ac9c91c36fda31d608bc3dfdfbfce0c1ce067d97bfd8cfc31d7ae6891b6ed3b",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "select-external-svm"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "audit-external-data",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 30.032215875107795,
+      "started_utc": "2026-10-28T14:15:48.997843+00:00",
+      "ended_utc": "2026-10-28T14:16:19.031240+00:00",
+      "log_sha256": "2865a963c3c10bac2a4053d4d7e0908bb343ca0666cf5e79189238f3b8cdbe3a",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/accept_source_audits.py",
+        "data"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "audit-external-svm",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 110.09677933296189,
+      "started_utc": "2026-10-28T14:16:19.037009+00:00",
+      "ended_utc": "2026-10-28T14:18:09.134575+00:00",
+      "log_sha256": "3c8f3dcaca746aef10c3fc8490ae7477149c78bbe797606d6524ac2dfe62e82b",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/accept_source_audits.py",
+        "svm"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "select-cluster-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 3516.0532853340264,
+      "started_utc": "2026-10-28T14:18:09.142752+00:00",
+      "ended_utc": "2026-10-28T15:16:45.197916+00:00",
+      "log_sha256": "f6ed97358e5709d89fa932e2e19e3f6ce1cf2ba0128b4b23e2c410de0bb5c3f7",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "select-cluster-cnn"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "select-external-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5097.305756750051,
+      "started_utc": "2026-10-28T15:16:45.203012+00:00",
+      "ended_utc": "2026-10-28T16:41:42.510390+00:00",
+      "log_sha256": "55a883f2f808be6287554ec925d93885577bb222db18a60625559ba514a3a639",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/tools/prepare_fresh_run.py",
+        "run",
+        "--project-root",
+        "<STUDY_ROOT>",
+        "--step",
+        "select-external-cnn"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "source-eval-cluster",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 75.14656554115936,
+      "started_utc": "2026-10-28T16:41:42.515952+00:00",
+      "ended_utc": "2026-10-28T16:42:57.663936+00:00",
+      "log_sha256": "c02344abfbaab27a727f2453f1df7756ec3366cfdfbbcaf7350a22df98abc83d",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/cnn/source_eval_audit.py",
+        "--config",
+        "outputs/research_v2/experiments/cnn/cluster_config.json"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "source-eval-external",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 115.18743287492543,
+      "started_utc": "2026-10-28T16:42:57.670518+00:00",
+      "ended_utc": "2026-10-28T16:44:52.860501+00:00",
+      "log_sha256": "f91f9bea975d64b58891c7a38b845a068c70500218a38454b8d70ee00fa54638",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/cnn/source_eval_audit.py",
+        "--config",
+        "outputs/research_v2/experiments/cnn/external_config.json"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "source-integrity-external",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.016816249815747,
+      "started_utc": "2026-10-28T16:44:52.867440+00:00",
+      "ended_utc": "2026-10-28T16:44:57.888271+00:00",
+      "log_sha256": "a6422815bcd12de8a2b94a1c15f782af2783fda0eee3d9c61c0ada1ad3a35044",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/cnn/verify_external_outputs.py",
+        "source"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "seal-check",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.01424741698429,
+      "started_utc": "2026-10-28T16:44:57.891658+00:00",
+      "ended_utc": "2026-10-28T16:45:02.907720+00:00",
+      "log_sha256": "1d300b6c665afe15472a40c30bf256acdc077cef9d339d7dadec27db375dfdd9",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/research/seal_external_models.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "seal-write",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.009286167100072,
+      "started_utc": "2026-10-28T16:45:02.910465+00:00",
+      "ended_utc": "2026-10-28T16:45:07.922458+00:00",
+      "log_sha256": "1a041f92e2ecc5ad077a5548600822696bd5374b16d333d1ae0dcf880827468d",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/research/seal_external_models.py",
+        "--write"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "evaluate-cluster-svm",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 65.10762779088691,
+      "started_utc": "2026-10-28T16:45:07.926501+00:00",
+      "ended_utc": "2026-10-28T16:46:13.038026+00:00",
+      "log_sha256": "8203c19d41b440038ee97765038db8c8fe148908f632ac3db4598427efbf3261",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/run_calibration.py",
+        "cluster",
+        "evaluate"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "evaluate-cluster-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 796.3783725830726,
+      "started_utc": "2026-10-28T16:46:13.044044+00:00",
+      "ended_utc": "2026-10-28T16:59:29.425624+00:00",
+      "log_sha256": "6839dca96971fbdcc41425624037e97784b93da95c362c0c87b9a91c20f88796",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/cnn_baseline.py",
+        "evaluate"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "evaluate-external-svm",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.008817416150123,
+      "started_utc": "2026-10-28T16:59:29.435948+00:00",
+      "ended_utc": "2026-10-28T16:59:34.448428+00:00",
+      "log_sha256": "59de77c22c70d8cce413099ffca8495bf10d128f90675f8375383b731606cf18",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/run_external_calibration.py",
+        "evaluate"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "evaluate-external-cnn",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 60.10858958307654,
+      "started_utc": "2026-10-28T16:59:34.452739+00:00",
+      "ended_utc": "2026-10-28T17:00:34.564567+00:00",
+      "log_sha256": "17f6d6c767084fae0c7a966757a8b882f3901feeaf0a7fd65e5e78844fdc7359",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/cnn/run_external_baseline.py",
+        "evaluate",
+        "--global-release",
+        "outputs/research_v2/research/external_global_model_freeze.json"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "verify-external-complete",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.0158363750670105,
+      "started_utc": "2026-10-28T17:00:34.572333+00:00",
+      "ended_utc": "2026-10-28T17:00:39.591032+00:00",
+      "log_sha256": "923a0c5fb90b56efd4b715000ba9c3339f9a0af8ba71a3d8b20529367d7bf41f",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/cnn/verify_external_outputs.py",
+        "complete"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "fetch-texture-metadata",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.016124416841194,
+      "started_utc": "2026-10-28T17:00:39.594488+00:00",
+      "ended_utc": "2026-10-28T17:00:44.613774+00:00",
+      "log_sha256": "83013f1027154e76431b2c047fda5929b3200f6118a253963f765c72e7b78404",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/fetch_texture_metadata.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "v1-select",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 110.18488237494603,
+      "started_utc": "2026-10-28T17:00:44.616982+00:00",
+      "ended_utc": "2026-10-28T17:02:34.804234+00:00",
+      "log_sha256": "8fc8f30478fc03b7746770a7c1d34a33980d9901840c26fceed49428fd7e1fef",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/experiments/run_experiment.py",
+        "select"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "v1-evaluate",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 105.19338754191995,
+      "started_utc": "2026-10-28T17:02:34.814951+00:00",
+      "ended_utc": "2026-10-28T17:04:20.012019+00:00",
+      "log_sha256": "123be60c49518d3a721c8d3e95de9bdc4156f63977a38f6684b9894cebe12218",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/experiments/run_experiment.py",
+        "evaluate"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "v1-posthoc",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 125.23802604200318,
+      "started_utc": "2026-10-28T17:04:20.021223+00:00",
+      "ended_utc": "2026-10-28T17:06:25.263304+00:00",
+      "log_sha256": "45b612b434f6c38eab74f6166bd7851df099eb05250369c5f861786826ff3a4e",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/experiments/posthoc_grid.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "v1-analyze",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.009559917030856,
+      "started_utc": "2026-10-28T17:06:25.266319+00:00",
+      "ended_utc": "2026-10-28T17:06:30.278379+00:00",
+      "log_sha256": "09c1d4679861e96dc0102bfbd4c4d39058d195aa126105c1145aab62c1f7a135",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/analysis/analyze.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "v1-posthoc-analyze",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.014739541802555,
+      "started_utc": "2026-10-28T17:06:30.281738+00:00",
+      "ended_utc": "2026-10-28T17:06:35.299467+00:00",
+      "log_sha256": "6ee9b30d1141d8e00ff3b47e6061bb553d8147713bceaf57011697f8398be1b9",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research/analysis/posthoc_analyze.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "diagnostics-real",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 65.12571733305231,
+      "started_utc": "2026-10-28T17:06:35.302314+00:00",
+      "ended_utc": "2026-10-28T17:07:40.431188+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/estimator_diagnostics.py",
+        "real"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "diagnostics-synthetic",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 10.023056332953274,
+      "started_utc": "2026-10-28T17:07:40.436675+00:00",
+      "ended_utc": "2026-10-28T17:07:50.464297+00:00",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/estimator_diagnostics.py",
+        "synthetic"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "analyze-revision",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.0087205830495805,
+      "started_utc": "2026-10-28T17:07:50.466283+00:00",
+      "ended_utc": "2026-10-28T17:07:55.477973+00:00",
+      "log_sha256": "23303ea72a3c0fbe83c164fbb867e00fbfbaf46839de7b363ba1dcda7ed43066",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/analysis/analyze_revision.py",
+        "--require-complete"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "analyze-alignment",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.014362582936883,
+      "started_utc": "2026-10-28T17:07:55.480938+00:00",
+      "ended_utc": "2026-10-28T17:08:00.497955+00:00",
+      "log_sha256": "e4db70d77478af8c3213fcb42f58f4293bdd070ec03fc07913293826ddef1c26",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/analysis/alignment_diagnostic.py"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "make-artifacts",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 20.045484374975786,
+      "started_utc": "2026-10-28T17:08:00.500789+00:00",
+      "ended_utc": "2026-10-28T17:08:20.550444+00:00",
+      "log_sha256": "7191f73da65ad6e5f5047f45060565c51da9c023597f2d9cbb0ae4b7964dce02",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/analysis/make_artifacts.py",
+        "--require-complete"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "calibrator-all",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 10.023723875172436,
+      "started_utc": "2026-10-28T17:08:20.553117+00:00",
+      "ended_utc": "2026-10-28T17:08:30.579789+00:00",
+      "log_sha256": "07cf1d47248072c6eb115d84e6f2dad2990f70b2c7ada295bd201fbaeb6a0940",
+      "argv": [
+        "python",
+        "-B",
+        "outputs/research_v2/experiments/calibrator_diagnostic.py",
+        "all",
+        "--run-dir",
+        "outputs/research_v2/experiments/calibrator_diagnostic/run_001"
+      ],
+      "expected_qc_stop": false
+    },
+    {
+      "name": "calibrator-table",
+      "status": "complete",
+      "exit_code": 0,
+      "elapsed_seconds": 5.0095851249061525,
+      "started_utc": "2026-10-28T17:08:30.582882+00:00",
+      "ended_utc": "2026-10-28T17:08:35.595011+00:00",
+      "log_sha256": "740d7212b4e1b970e3cb3a947d9a9dfa1258928cec947bdf3166cf5204d588a3",
+      "argv": [
+        "python",
+        "-B",
+        "scripts/make_synthetic_table.py",
+        "--run-dir",
+        "outputs/research_v2/experiments/calibrator_diagnostic/run_001",
+        "--output-dir",
+        "<RUN_RECORDS>/synthetic_table"
+      ],
+      "expected_qc_stop": false
+    }
+  ],
+  "private_archive_digests": {
+    "full_runtime.json": "13ab53453c4b373621e514aa5c896ea1ad1bbbc4267d4bc508a84018edbdd74f",
+    "run_scope.json": "7c7f0a057f193a7c38739651a1eb1f4244297019e3ceb3c3f53c1c0e8b9d8386",
+    "reproduction_resource_decision.json": "fb77d37728d33478d7e959294959d23eae0bbea4fa69e3fd3be3fa9ddfdd65c5",
+    "pretarget_resource_check.json": "74793839aca1f60a543a8c2fa9a517bbe71d11abec933e4514fd183ae76bbccc",
+    "final_resource_check.json": "7ec9b561d3ff9d66d77bb889bf66030dd961350ac335a8350c3d38080eacee40",
+    "fresh_supplement_receipt.json": "dbb1d1e2fcedf9edfa5ea56c448df9b46edf97b45ea940c16a07cc8720dacd7c",
+    "reference_retry_001.json": "dd02644c5b692a4c194b2c6c78cc9f3cc9d86392ec57c772e96bce24693c7d94",
+    "final_comparison_001/audit.json": "f0ce4e77aab4984ef080c123aac3a09769a32175674548550de26f447cebd083"
+  },
+  "verification_limits": [
+    "Tested on macOS arm64/Python3.12 with CPU two-thread training; native Windows and other hardware/platforms were not executed.",
+    "Whole original remote archive hashes were not verified; used ranges/members and generated input hashes were checked.",
+    "Five old reference-file comparisons remain unavailable as listed; all new-stage inputs/outputs passed their integrity checks.",
+    "No new physical instances, isolated-session experiment, stronger efficacy claim or paper-submission action is implied."
+  ]
+}
