@@ -1,0 +1,50 @@
+{
+  "provenance": "Public citation metadata extracted from the recorded Mendeley v1 source; not the original webpage or a fresh retrieval.",
+  "source_url": "https://data.mendeley.com/datasets/n666tk4mw9/1",
+  "snapshot": {
+    "id": "n666tk4mw9",
+    "version": 1,
+    "name": "Multimodal Tactile Texture Dataset",
+    "doi": "10.17632/n666tk4mw9.1",
+    "publish_date": "2023-08-15T05:05:38.688Z",
+    "licence": {
+      "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+      "short_name": "CC BY 4.0",
+      "full_name": "Creative Commons Attribution 4.0 International",
+      "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+      "url": "http://creativecommons.org/licenses/by/4.0",
+      "category": "Creative",
+      "customer_id": null
+    },
+    "contributors": [
+      {
+        "first_name": "Bruno",
+        "last_name": "Monteiro Rocha Lima"
+      },
+      {
+        "first_name": "Thiago Eustaquio",
+        "last_name": "Alves de Oliveira"
+      },
+      {
+        "first_name": "Vinicius",
+        "last_name": "Prado da Fonseca"
+      }
+    ]
+  },
+  "files": [
+    {
+      "filename": "multimodal-tactile-texture-dataset.zip",
+      "content_details": {
+        "download_url": "https://data.mendeley.com/public-files/datasets/n666tk4mw9/files/70c5500e-2ef3-40af-a8f4-d4eac7bb3119/file_downloaded",
+        "sha256_hash": "56468a6bc7191b46e12f09fece605d117bf29e8c678ae458b885e01a41917572"
+      }
+    },
+    {
+      "filename": "reading-pickle-file.ipynb",
+      "content_details": {
+        "download_url": "https://data.mendeley.com/public-files/datasets/n666tk4mw9/files/1601963b-89ed-4b28-beb9-672b20e59040/file_downloaded",
+        "sha256_hash": "aaa43ffab84767e3b0589be84c64e9135a90fc9f60c044293c354a2518992176"
+      }
+    }
+  ]
+}

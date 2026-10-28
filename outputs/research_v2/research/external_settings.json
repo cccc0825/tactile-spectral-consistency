@@ -1,0 +1,18 @@
+{
+  "data_file": "data/external/processed/psd.npz",
+  "source_speeds": [
+    30,
+    35
+  ],
+  "target_speed": 40,
+  "feature_settings": {
+    "lo": 5,
+    "hi": 100,
+    "ref": 35,
+    "support": [
+      4,
+      120
+    ],
+    "mel_hi": 100
+  }
+}

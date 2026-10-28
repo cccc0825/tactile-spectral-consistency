@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-09-14T07:15:37.276675+00:00",
+  "status": "exploratory post-hoc descriptive analysis; target outcomes previously observed",
+  "inputs": [
+    "outputs/research_v2/experiments/calibration/external/external40_corrected_predictions.csv",
+    "outputs/research_v2/experiments/calibration/external/external40_spatial_predictions.csv",
+    "outputs/research_v2/analysis/report.json"
+  ],
+  "plan": [
+    "Verify prediction hashes, unique acquisition/index pairing, truth labels, support, speed and domain.",
+    "Use all 12 specimens without exclusions or refits. Compute per-specimen correct counts, recalls, paired percentage-point differences and contribution (difference/12) to fixed-panel macro difference.",
+    "Compute each of 12 leave-one-specimen-out means as descriptive influence only; report range and all sign changes.",
+    "Retain original 12-specimen mean, original conditional interval and original 3 pp benefit criterion without alteration; no p-values.",
+    "Generate full CSV, vector figure, table and macros from actual saved predictions."
+  ],
+  "forbidden": [
+    "refitting",
+    "threshold selection",
+    "data exclusion",
+    "claiming new confirmation or generalization",
+    "new p-values",
+    "using influence to justify deletion"
+  ]
+}

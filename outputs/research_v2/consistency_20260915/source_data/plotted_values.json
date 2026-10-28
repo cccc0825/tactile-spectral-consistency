@@ -1,0 +1,18 @@
+{
+  "synthetic_accuracy_pct": {
+    "ideal": [
+      100.0,
+      86.45833333333334
+    ],
+    "lowpass_200Hz": [
+      54.166666666666664,
+      81.25
+    ]
+  },
+  "external_difference_pp": -0.6573730502301928,
+  "external_conditional_interval_pp": [
+    -6.49323249501821,
+    4.506797996976568
+  ],
+  "external_threshold_pp": 3
+}

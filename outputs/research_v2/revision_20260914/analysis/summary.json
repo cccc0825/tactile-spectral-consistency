@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-14T07:17:37.203145+00:00",
+  "status": "exploratory post-hoc descriptive influence analysis",
+  "pairing_checks": {
+    "outputs/research_v2/experiments/calibration/external/external40_corrected_predictions.csv_hash": true,
+    "outputs/research_v2/experiments/calibration/external/external40_spatial_predictions.csv_hash": true,
+    "unique_keys": true,
+    "exact_pairing": true,
+    "correct_fields_verified": true,
+    "target_rows_1196": true,
+    "all_12_specimens": true
+  },
+  "n_target_acquisitions": 1196,
+  "n_specimens": 12,
+  "corrected_macro_recall_pct": 12.592626949769807,
+  "spatial_macro_recall_pct": 13.25,
+  "all12_difference_pp": -0.6573730502301928,
+  "original_conditional_interval_pp": [
+    -6.49323249501821,
+    4.506797996976568
+  ],
+  "interval_scope": "conditional on saved models and empirical specimen panel; no future-sensor, new-specimen or retraining coverage claim",
+  "interval_provenance": "Copied unchanged from frozen analysis/report.json; not recalculated or reinterpreted.",
+  "specimen_signs": {
+    "improved": 6,
+    "worsened": 3,
+    "tied": 3
+  },
+  "leave_one_specimen_out_range_pp": [
+    -2.3534978729783926,
+    1.7374112179306984
+  ],
+  "removals_changing_sign": [
+    1,
+    8
+  ],
+  "original_primary_support": false,
+  "original_rule": "At least 3 pp improvement with positive conditional lower bound; unchanged.",
+  "limitations": [
+    "No independent new-instance or new-session test.",
+    "Acquisitions within a physical specimen are not independent specimens.",
+    "LOSO is influence only; all 12 retained in primary comparison.",
+    "Observed sign changes are not evidence to exclude specimens.",
+    "No new p-values, refits, thresholds or application gate."
+  ]
+}

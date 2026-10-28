@@ -1,0 +1,450 @@
+{
+  "scope": "Research source, public metadata, explicitly synthetic fixture, compact original prediction/plot inputs; excludes raw recordings and trained weights.",
+  "files": {
+    ".gitignore": {
+      "bytes": 654,
+      "sha256": "ba7945c4d9b531c8fa34cc600776c13e91104ab4264bd1b3e1490b8ac90445e7",
+      "git_blob_sha1": "693d7ac8cce7f2e9bff5b1852760d313feb594b0"
+    },
+    "README.md": {
+      "bytes": 5506,
+      "sha256": "f23d9c1a40a331a4e5b9638a28663feccdc73958a071f229409d2c7467545777",
+      "git_blob_sha1": "1597d8636298dda27dfc9d56f54fb9f17df9c354"
+    },
+    "THIRD_PARTY.md": {
+      "bytes": 2734,
+      "sha256": "d58b531853ce107a7015d2537f78272b8ed1f2495c4bccab79b6e818e69525e9",
+      "git_blob_sha1": "d13bbe40ef10685359fdbfa8fcbd4af01e18d915"
+    },
+    "docs/REPRODUCTION.md": {
+      "bytes": 6488,
+      "sha256": "cd09ae1c0baff0dc0802cd52b30ff149da7f2b6b5376ecf57f47bcc9640ee16d",
+      "git_blob_sha1": "d662b826927f7b25c0f1fcf5403a8a77a79f6828"
+    },
+    "outputs/research/analysis/analyze.py": {
+      "bytes": 8773,
+      "sha256": "699ce6921fc30b888d025a168c5fe27613964e1c35b72ea1ee734e179ed2886b",
+      "git_blob_sha1": "cbbed9e3d6b8438bfd85075af6a8986308dfdd16"
+    },
+    "outputs/research/analysis/make_figures_tables.py": {
+      "bytes": 4682,
+      "sha256": "11f1a5887f5dbd2f20bf16cdd96103399e5f47dd17543ce38d4b18577cc28034",
+      "git_blob_sha1": "79f18519b84086f26eaa60590cb65de387ab0022"
+    },
+    "outputs/research/analysis/posthoc_analyze.py": {
+      "bytes": 1823,
+      "sha256": "2de91e739afe143a711582b571cee1872d90262a021277622cd57b4b06e2e552",
+      "git_blob_sha1": "dd4562e860f5e788b0f765738af8cd4c87f92aaa"
+    },
+    "outputs/research/corpus/archive_index.json.gz": {
+      "bytes": 2387177,
+      "sha256": "a74eefb58970433d4e576db34cf383b0bda7f80e4a0db5b84ada995eec0e25d0",
+      "git_blob_sha1": "15bc8fa348ce9ab0ef01caf45e5e9505b9080d55"
+    },
+    "outputs/research/experiments/audit_positions.py": {
+      "bytes": 2544,
+      "sha256": "f87d61540708afa729acdac0a54598bb556a9e75c59befbe50449c9f898fe81d",
+      "git_blob_sha1": "f1d387dfdb3711992e227800996eede8db7b69af"
+    },
+    "outputs/research/experiments/configuration_snapshot.json": {
+      "bytes": 1692,
+      "sha256": "c06654df4bbfbbb41bf66179fe273ba1a1992c2e472a249f6d255eb7fdf7217a",
+      "git_blob_sha1": "f08fecf3562781d0d494e1dad5902fab6a6da192"
+    },
+    "outputs/research/experiments/download_data.py": {
+      "bytes": 4148,
+      "sha256": "59187379373d3649b4f93de669ed698e13eb10ec364886c72c76e59f117ffa40",
+      "git_blob_sha1": "339cd14982fdd1b8afa006ae69417cd8085fe238"
+    },
+    "outputs/research/experiments/extract_features.py": {
+      "bytes": 5090,
+      "sha256": "25428aa10c81713a55a5b2b28216d33b846fcba2877274bacd13cc5735a405a8",
+      "git_blob_sha1": "674f6e5766d6276901ab5108a08cf2b8f2f4d6a8"
+    },
+    "outputs/research/experiments/posthoc_grid.py": {
+      "bytes": 2350,
+      "sha256": "fc0f85e3eaa0eb971ea857ac5778c843e7c78240a522dee84dc9faba3f69f39e",
+      "git_blob_sha1": "20df9796a62f95b6ba5c4974940c8fce56354126"
+    },
+    "outputs/research/experiments/requirements-lock.txt": {
+      "bytes": 424,
+      "sha256": "045a5feeb019c950d4ccfc9057486e675fbb774f2dbbd3dbd6435930f80ea428",
+      "git_blob_sha1": "36da14a6f81d22756c3411e48a4d2c0b8c74c1bc"
+    },
+    "outputs/research/experiments/run_experiment.py": {
+      "bytes": 13258,
+      "sha256": "90209f9a52cd483879019924cea46f6b8080631fee20312a2540eb772d806105",
+      "git_blob_sha1": "183f0c234e269d3e1d9088a6f7cdca9ec1f71bfc"
+    },
+    "outputs/research/experiments/test_pipeline.py": {
+      "bytes": 3592,
+      "sha256": "9b5476a4ffa17ecc1d6076a937d91abe2cc0f888883c36049cf5db8bb1628a37",
+      "git_blob_sha1": "3d570a743a9ab0276bffbc8a7ccb0fe29c543123"
+    },
+    "outputs/research/experiments/verify_data.py": {
+      "bytes": 1876,
+      "sha256": "8b15f57e52cd2fc7bd2344c2297957b7c6e937f3af6b2ff27ca466780773fd9f",
+      "git_blob_sha1": "0434a00c088e471cb38c80d667bdaa85b00e6485"
+    },
+    "outputs/research/research/posthoc_diagnostic_01.md": {
+      "bytes": 1330,
+      "sha256": "2decedc7106fed966a7158aa63d83e4b7a9c2c4a9c0e622586bf6fdde74932cb",
+      "git_blob_sha1": "0b705443136e9507aaabd392a907255961ecb07c"
+    },
+    "outputs/research/research/protocol_addendum_01.json": {
+      "bytes": 219,
+      "sha256": "5839bb13e5e35e2f5bda2e255ea36c785731799b3633d2443348a1b7951a62f1",
+      "git_blob_sha1": "afbae75eb5622f97baabd1dfa3fc1ae95353d5db"
+    },
+    "outputs/research/research/protocol_addendum_01.md": {
+      "bytes": 3048,
+      "sha256": "795eb067adbfb1f5cf42de084010c434e327df4d53e2e016439368504c2a191c",
+      "git_blob_sha1": "f3a4e7333103411578e012d536594ed276a574a1"
+    },
+    "outputs/research/research/protocol_addendum_02.json": {
+      "bytes": 177,
+      "sha256": "a9539ec3ec07ce6a30159184edb5478863885eb3488b0d41a41120a606554276",
+      "git_blob_sha1": "1a6ab4a9919dc92b70eb24510e6152906237292b"
+    },
+    "outputs/research/research/protocol_addendum_02.md": {
+      "bytes": 1531,
+      "sha256": "aa886633dc617dc4462dbea8866702ae0860f5353eb40805dc989786abcc61ef",
+      "git_blob_sha1": "e6573394ca78065685c55fac353e2475fdbdaa09"
+    },
+    "outputs/research/research/protocol_v1.md": {
+      "bytes": 9127,
+      "sha256": "5a7f5531b8fc83f3e7945a9ca1dea31cbcbe604015412a72c53c923b18487e79",
+      "git_blob_sha1": "fd38bf3d58be1db4c128efacc1a1d6482ec81026"
+    },
+    "outputs/research_v2/analysis/alignment_diagnostic.py": {
+      "bytes": 2605,
+      "sha256": "5a77f4f69dd88b19e5907cee2882d983db45666664eb6cfeb80599e0abbeace1",
+      "git_blob_sha1": "a9dc46a9593f7de02f1568bef9cd26fab254419c"
+    },
+    "outputs/research_v2/analysis/analyze_revision.py": {
+      "bytes": 11742,
+      "sha256": "d08894900138472ba6fae5cada33305481f2c9d6ea4b7e95527aeced1249e12e",
+      "git_blob_sha1": "9e9b937e586ecb92d54187604e98cd501dabb555"
+    },
+    "outputs/research_v2/analysis/make_artifacts.py": {
+      "bytes": 13509,
+      "sha256": "37a2fa0474fc4d2c7f4d6ee17691a2b10613bdc982d884d92486e125fc943dc8",
+      "git_blob_sha1": "786814f7c87195ca7ac12e848184eec72176acbf"
+    },
+    "outputs/research_v2/analysis/make_calibrator_artifacts.py": {
+      "bytes": 3007,
+      "sha256": "8886b2174edd4775483e626145cab7504df710f8ba693eb4eb48048c167e6374",
+      "git_blob_sha1": "3578a3cd4a54261e64b47ebbc248ede8829048eb"
+    },
+    "outputs/research_v2/analysis/make_supplement.py": {
+      "bytes": 12044,
+      "sha256": "a7c2cec0a89258b199583c882630d75d2737f0bed60a1f761a56e766388ff65e",
+      "git_blob_sha1": "ef29c21cc2b0a4f6cdde2046567475c70327cb3c"
+    },
+    "outputs/research_v2/analysis/report.json": {
+      "bytes": 10354,
+      "sha256": "1b718c9bf5579cbecef93f9d6fbe099d62499ad16950c63dc0578bc2457d93b7",
+      "git_blob_sha1": "9490d4cf6e747183655877f7dd8e55d3ecdac143"
+    },
+    "outputs/research_v2/consistency_20260915/source_data/external_summary.json": {
+      "bytes": 1759,
+      "sha256": "8423df66306f4350c0ce4ba55f3f82145455daa7fbb9f019fd3c1897b527a63b",
+      "git_blob_sha1": "1de0d7caf3c7d1d4d324451b9afe52ca5ab6313f"
+    },
+    "outputs/research_v2/consistency_20260915/source_data/figure_values.json": {
+      "bytes": 599,
+      "sha256": "0eb837350c940f941ea977ae6129f1b91c2816b514c4ab2144f7bf6039f757eb",
+      "git_blob_sha1": "337239c82a6555deb9ec6ee295a99d002acba9bc"
+    },
+    "outputs/research_v2/consistency_20260915/source_data/manifest.json": {
+      "bytes": 619,
+      "sha256": "bc57cd9155670eb1e89f9a32e1c16ded1b1d9611bdd83ff54015601c738b89c9",
+      "git_blob_sha1": "6af31ba95a3879380defd1c16558701f42953ea3"
+    },
+    "outputs/research_v2/consistency_20260915/source_data/per_specimen_effects.csv": {
+      "bytes": 1311,
+      "sha256": "5b804edf324861c5026d4de16964190065abc7871e045d4721f20180b18aeae7",
+      "git_blob_sha1": "f1d7824b8329d6ff046a699da06b84a84366171a"
+    },
+    "outputs/research_v2/consistency_20260915/source_data/plotted_values.json": {
+      "bytes": 333,
+      "sha256": "f8376e884debb1b6b1e744c76f419e35bf9e197cf2b5574fdeacf0272b0b426d",
+      "git_blob_sha1": "dd24468a895ca25c648de674e13de33033b5c943"
+    },
+    "outputs/research_v2/consistency_20260915/source_data/synthetic_summary.csv": {
+      "bytes": 2222,
+      "sha256": "9e25086a440f47e5b85db2adcb4005dc6aec3388ecd1b71fb3332978246e1f0e",
+      "git_blob_sha1": "ef0d9b026146973b1845110891fbdcff03ac81bc"
+    },
+    "outputs/research_v2/consistency_20260915/tools/plot_overview.py": {
+      "bytes": 5713,
+      "sha256": "28c4d095876527067ecd52be703d312d682a8a538c6581469c7293ca848f432d",
+      "git_blob_sha1": "8a90261582531bc92482713936f1ab745544d6bf"
+    },
+    "outputs/research_v2/data/external/publish_under_decision.py": {
+      "bytes": 11440,
+      "sha256": "786341ea3ec8f0441d6ae5601d37ae2eb1e1cf370e91ae8508000e600392e25c",
+      "git_blob_sha1": "76be9d180a9fb15870c9a370448df647691a4d00"
+    },
+    "outputs/research_v2/environment/requirements.txt": {
+      "bytes": 612,
+      "sha256": "b0fb366d12c72f5a13d6aeaa2dffa1cd3c0687cb13c5efd89875d0158ac50a6f",
+      "git_blob_sha1": "537200546b0600d1efc169a2b1b22184d06d3b49"
+    },
+    "outputs/research_v2/experiments/audit_original_data.py": {
+      "bytes": 4494,
+      "sha256": "fe4af7ffaab9e2d725a9f30559bce66f4f933f5a4144f5b0431756020a4b098e",
+      "git_blob_sha1": "3f987f7199d405ef538f5f6f9ac67e615ce273e4"
+    },
+    "outputs/research_v2/experiments/baseline_protocol.md": {
+      "bytes": 10444,
+      "sha256": "3ae2e635a9ab73e1ed7220f2fec29d9f6242e712f93cc77878595e799e8efee1",
+      "git_blob_sha1": "7f79839758bbf2c2edfacbaf50e703014f5abdd2"
+    },
+    "outputs/research_v2/experiments/calibration/external/external40_corrected_predictions.csv": {
+      "bytes": 33867,
+      "sha256": "b4e38bb925f1dfb82e7b8382de592d105a8fc19a5086968cd6d509256cc32559",
+      "git_blob_sha1": "a977b562d97e2eafa68ea1019d579caf2aadcdcc"
+    },
+    "outputs/research_v2/experiments/calibration/external/external40_spatial_predictions.csv": {
+      "bytes": 33855,
+      "sha256": "a63e011d7eba59930a87987ddc70f234c1e248cd4d4d3a57c40addcef48fe6d7",
+      "git_blob_sha1": "e28f5beba9452846bddbb29d76135fe8f6af4e0d"
+    },
+    "outputs/research_v2/experiments/calibrator_diagnostic.py": {
+      "bytes": 42032,
+      "sha256": "3fffef60cc15bdad9102528d3a4e2a5d15178e6332411e784a9fd58a06a355ac",
+      "git_blob_sha1": "c0fd603178a6441b5a291963a96f0593c3fc62ce"
+    },
+    "outputs/research_v2/experiments/cnn/apply_compute_amendment_02.py": {
+      "bytes": 1819,
+      "sha256": "ce09b8ef2a7b6dec82381bf33485e076b6d7fcf47b48f2ad28f1826c4755d0d7",
+      "git_blob_sha1": "729d46ffc0273e5e4edd6c7706b3162f340620a3"
+    },
+    "outputs/research_v2/experiments/cnn/configure_external.py": {
+      "bytes": 6494,
+      "sha256": "44726b404d16e290d587052a7832baa81ae407c3de6747ef988677fb26728d30",
+      "git_blob_sha1": "a9f8a42fa8c4e09722d6f2fd18f7c17c8f1418df"
+    },
+    "outputs/research_v2/experiments/cnn/external_baseline_protocol.md": {
+      "bytes": 4850,
+      "sha256": "1488c2b1e09dc51db442e9282be7ab813c164d71685857f30375b0ac1013826b",
+      "git_blob_sha1": "0176705140ae1cab8efad20f146932c50e17c6f5"
+    },
+    "outputs/research_v2/experiments/cnn/run_external_baseline.py": {
+      "bytes": 2736,
+      "sha256": "0eaa28edaf1f10456e01407bcfb5489adfc394fa13ba4207fccc3af146cc4ead",
+      "git_blob_sha1": "cbb0135ab82e33adfc7683ea3903bac2594200fb"
+    },
+    "outputs/research_v2/experiments/cnn/source_eval_audit.py": {
+      "bytes": 3228,
+      "sha256": "43805e00a0427ed67ca1b36bf9cb701f9764bfe2b8a1333018ad4a9bb7a9678a",
+      "git_blob_sha1": "de3979db1aa89c5877b88a0fab5a48d5d78a10c9"
+    },
+    "outputs/research_v2/experiments/cnn/verify_external_outputs.py": {
+      "bytes": 5826,
+      "sha256": "37199b5b1bd28582fa9e035dd37999c0ea8f223448b7b4b107faa9c1ce013418",
+      "git_blob_sha1": "2ed16c51aec0079bbf451a300f403714dd9d1a1e"
+    },
+    "outputs/research_v2/experiments/cnn_baseline.py": {
+      "bytes": 25677,
+      "sha256": "34018e80217643524483c04e54f0c604f72cecf65e8d6652c1223d98536b6744",
+      "git_blob_sha1": "4ddae85e4afcff577229be93bd22ca9c63a74a23"
+    },
+    "outputs/research_v2/experiments/diagnostics/synthetic_signals_psd.npz": {
+      "bytes": 1903040,
+      "sha256": "179f5f1ebaca701bf0aa7f0f47274768e72acc240b9d13d93d5ef213e84c9f2b",
+      "git_blob_sha1": "297e23432a966ca90ee9933505fbf023f201fc5e"
+    },
+    "outputs/research_v2/experiments/download_external.py": {
+      "bytes": 17662,
+      "sha256": "e20e757f18b5095cfeba6eea063bcc1fca319ae457e00fc09040ae89000ab9a1",
+      "git_blob_sha1": "8cf61d06413448a87ca742d614ebf14a1539305b"
+    },
+    "outputs/research_v2/experiments/estimator_diagnostics.py": {
+      "bytes": 8654,
+      "sha256": "cbfefe195de995a059d9ca117f7e7b45f35631e72e70f62661472b291a04953b",
+      "git_blob_sha1": "555d00dfd5282eacc4fde683f8af28d1e82ea3c0"
+    },
+    "outputs/research_v2/experiments/extract_cluster_spectrograms.py": {
+      "bytes": 8221,
+      "sha256": "0ee8db2c297d8e5334e81f2f18dff43e4693ec08b8c3304e21d3ef6a7262bc2b",
+      "git_blob_sha1": "b146f1b0f21d395d912974302b99e5dba0c8189a"
+    },
+    "outputs/research_v2/experiments/extract_external.py": {
+      "bytes": 35119,
+      "sha256": "ef35ff402450c29e290178bfae31f3954082a031e75e88226d921304779073c3",
+      "git_blob_sha1": "b7673b6faf943f27e280c46178873b5979514cce"
+    },
+    "outputs/research_v2/experiments/response_calibration.py": {
+      "bytes": 5174,
+      "sha256": "b2096e13e7978dc8e2b4d5280488f924f813e57b1f7701b02ead2687241c668a",
+      "git_blob_sha1": "2cdada936621a135d2cacf9752d327fef8804f1a"
+    },
+    "outputs/research_v2/experiments/run_calibration.py": {
+      "bytes": 8341,
+      "sha256": "b5279b8f52bd7a88a5709ed0ebe905ef20499aac02f5dccd15db6ddefc414027",
+      "git_blob_sha1": "d8fe4c2c8daf635410f077d18e82d454404f51dd"
+    },
+    "outputs/research_v2/experiments/run_external_calibration.py": {
+      "bytes": 2730,
+      "sha256": "7907fe00931fcdef5f9f5080f165be1d09be878a0c1c920bdbc1b24be53ba748",
+      "git_blob_sha1": "bd08fde13ec4c912b32c2cc8f20ec927f16af7d5"
+    },
+    "outputs/research_v2/research/alignment_diagnostic_protocol.md": {
+      "bytes": 1680,
+      "sha256": "6fa491728a1adea9398dd5a0728dd39ecb07d0c6a0ac7a646ffd899cecd290c0",
+      "git_blob_sha1": "958d99e05da83fee96f9df6f9c0cc3613b2efdb5"
+    },
+    "outputs/research_v2/research/calibration_protocol.freeze.json": {
+      "bytes": 211,
+      "sha256": "42e61af3e791686956ba44e70c6fb8cb0909f76c6c26ec2468d008d13817b85e",
+      "git_blob_sha1": "64e6bd166d0315b2d2c8a32cdd2a66ee5d4fcd06"
+    },
+    "outputs/research_v2/research/calibration_protocol.md": {
+      "bytes": 5251,
+      "sha256": "8be4c89aa3260a9ee356443ef2940b66a86b847f9ac6a3af4a1e65f7635e394a",
+      "git_blob_sha1": "a261a4f491b2255e948978d86e34d2794b119027"
+    },
+    "outputs/research_v2/research/calibrator_diagnostic_protocol.freeze.json": {
+      "bytes": 353,
+      "sha256": "114e5ddf077ff2a4b46bd2ad1c15459b4a6dd64db2a6ab4338f5aa6bb708a38b",
+      "git_blob_sha1": "61ea44e6a59a827a905028346388c9c7037af9df"
+    },
+    "outputs/research_v2/research/calibrator_diagnostic_protocol.md": {
+      "bytes": 4912,
+      "sha256": "501c293f001994042105bdcef7e793457fee637e1865d811eacca9a200a418a1",
+      "git_blob_sha1": "a15522fafa7671da4b5c298ea713f8c6aa3f48ab"
+    },
+    "outputs/research_v2/research/diagnostic_protocol.freeze.json": {
+      "bytes": 127,
+      "sha256": "b6946665242c21b5b04fc418c15b5025bd6720bc5819e5d53c9d3c1147db7e48",
+      "git_blob_sha1": "5f42232584adc874050c660df68e2aaaba92da23"
+    },
+    "outputs/research_v2/research/diagnostic_protocol.md": {
+      "bytes": 2677,
+      "sha256": "d4e8f5014bb8f12a101a01d881e9cd874ab5b9504f55e21fab6851f88936f137",
+      "git_blob_sha1": "18b7c421b0b4a22778cd3279a4e72411dd66f55c"
+    },
+    "outputs/research_v2/research/external_protocol.freeze.json": {
+      "bytes": 199,
+      "sha256": "2780eac9848108bc9dd5a2609eb6b52ca5bf57e26963f25a553181d8dae4e497",
+      "git_blob_sha1": "f41292e0b6a6c236e7c2d8b9b67d85c338164120"
+    },
+    "outputs/research_v2/research/external_protocol.md": {
+      "bytes": 6103,
+      "sha256": "c9e8c3b62525a5e78741de3f4e8b61b5da584a3dc4bf90ca0ece28eb0c222dfa",
+      "git_blob_sha1": "2b03a5f4db6a1627f6e39b6b8a5cbfba8143dcd9"
+    },
+    "outputs/research_v2/research/external_settings.json": {
+      "bytes": 248,
+      "sha256": "dce3695e26f23cd0a131fa9d8d81ce69595e5ea599b0db19b2706409699b2f8d",
+      "git_blob_sha1": "e7d5d4737e1345cfba55c14e7be4165ef9be30de"
+    },
+    "outputs/research_v2/research/record_external_validity_decision.py": {
+      "bytes": 5629,
+      "sha256": "fa19eaaf9cdc8914f2a9b74ffcb99b3e7a6134e9b8cb1bca5c8127590f547ff0",
+      "git_blob_sha1": "06e14413818050b9f121573718cb7bbb8b424568"
+    },
+    "outputs/research_v2/research/seal_external_models.py": {
+      "bytes": 6512,
+      "sha256": "3dc31180d6a84207d3b7ce50b93360d89deeccc89b153961043d10df2fb55d61",
+      "git_blob_sha1": "56b652d200ae61c4c58e041a6f6d2026f9cc0afb"
+    },
+    "outputs/research_v2/revision_20260914/analysis/analysis_plan.json": {
+      "bytes": 1289,
+      "sha256": "81d1231cb63e93d4e2605a61f1aa3bf7fbddcaf15eb04d534802959a055f12ab",
+      "git_blob_sha1": "f3ef7099f1a6b183e1ead720c8a55d5c2b27c433"
+    },
+    "outputs/research_v2/revision_20260914/analysis/per_specimen_effects.csv": {
+      "bytes": 1311,
+      "sha256": "5b804edf324861c5026d4de16964190065abc7871e045d4721f20180b18aeae7",
+      "git_blob_sha1": "f1d7824b8329d6ff046a699da06b84a84366171a"
+    },
+    "outputs/research_v2/revision_20260914/analysis/run_specimen_influence.py": {
+      "bytes": 9432,
+      "sha256": "22cdabf1a2daf809750fcef49e6df3075d0dae930e987fe12381be8bfb47b41c",
+      "git_blob_sha1": "d126b401f25a2759d429db98857aa397d9a25070"
+    },
+    "outputs/research_v2/revision_20260914/analysis/specimen_influence_numbers.tex": {
+      "bytes": 259,
+      "sha256": "7def9309ff5c6255f33204c4b414b9742f7a0a49c6ff1eca0566c8f801e1f5ad",
+      "git_blob_sha1": "c09a46a3682482d6f03c2045abce0243c0a797b6"
+    },
+    "outputs/research_v2/revision_20260914/analysis/specimen_influence_table.tex": {
+      "bytes": 623,
+      "sha256": "f65100baf07d739c8f8f6ad212d0eaa74046f90933a25c0143bed2bcb4e36159",
+      "git_blob_sha1": "b6e1e741c60b6bfa8e97d001369c1e77a360d836"
+    },
+    "outputs/research_v2/revision_20260914/analysis/summary.json": {
+      "bytes": 1759,
+      "sha256": "8423df66306f4350c0ce4ba55f3f82145455daa7fbb9f019fd3c1897b527a63b",
+      "git_blob_sha1": "1de0d7caf3c7d1d4d324451b9afe52ca5ab6313f"
+    },
+    "outputs/research_v2/revision_20260914/tools/replay_specimen_influence.py": {
+      "bytes": 2647,
+      "sha256": "7037d8fc9b42c5f8862f0d25479a7a83cda2f8f9c5f5a8fb38aca1ef9de13336",
+      "git_blob_sha1": "660dcc3fa022479510757b6be63c7dd2ac3bb2c1"
+    },
+    "outputs/research_v2/tools/check_calibrator_clean_replay.py": {
+      "bytes": 2754,
+      "sha256": "29149add19a4f46cd0c41e6f5792decc34c517cb9ab727b0a2021427b4ac0b59",
+      "git_blob_sha1": "aff410201cfef029c5f61f23a1795a46ec469da8"
+    },
+    "outputs/research_v2/tools/portable_reproduce.py": {
+      "bytes": 27168,
+      "sha256": "e8e125edba970cd47c7fab6eb3c1803e3c37d576f05aa19938dea7ed0ba2aa1e",
+      "git_blob_sha1": "bb628bac06c35c3a63bbda071db884b0ec9b5fc9"
+    },
+    "outputs/research_v2/tools/prepare_fresh_run.py": {
+      "bytes": 21161,
+      "sha256": "b4dd0c80c967ce848c67d42f8c4b910a32180795f47a019c39ec41f62c98be13",
+      "git_blob_sha1": "f5b80ce0e3e0ebc89ce6eb842c2da4d4e45e03e3"
+    },
+    "release_metadata/external_dataset.json": {
+      "bytes": 2116,
+      "sha256": "84e93824ca8b912c218a5ac003940bb7628d6a98620eb511db57c7fd337f1a45",
+      "git_blob_sha1": "1195727074803d0e6da47451d4330e71e1891fd2"
+    },
+    "release_metadata/source_inventory.json": {
+      "bytes": 13263,
+      "sha256": "5d8a5a2f2f7b2b80842620732a3c9dbcfc722e1c94bc611cac169876d3f56b74",
+      "git_blob_sha1": "c1c3c4a45418061ef9bd2a07661e2aea8ec7c0de"
+    },
+    "release_metadata/validation.json": {
+      "bytes": 4425,
+      "sha256": "1caf2d378495e02302e1a6f86112605dc8aa4c9620554f9017fa8ffb4fa3abce",
+      "git_blob_sha1": "dd7669c543560e4d76d6ace6662535b69d6b7ecc"
+    },
+    "scripts/bootstrap_public.py": {
+      "bytes": 3024,
+      "sha256": "997e5ca3d77454b5c9b557165aa94548803c9769a66f35ffbe6f6e0b80c6d8c6",
+      "git_blob_sha1": "6e5fbcd840872d92a0aa094cb97424a755843b29"
+    },
+    "scripts/verify_release.py": {
+      "bytes": 1096,
+      "sha256": "bc7876562afb512f4e7475237722f71b85223223a33d51100a583ef045b19063",
+      "git_blob_sha1": "bb2aac334680ed25c3d37233ef7f3c5ec63fcbdb"
+    },
+    "work/revision/vendor/cluster-official/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+    },
+    "work/revision/vendor/cluster-official/train/classification/ResnetClassification.py": {
+      "bytes": 8311,
+      "sha256": "10aa9db4b454bb54aa11c68a84afe0fe71993b91073fbdc331711962ef068764",
+      "git_blob_sha1": "77c2f3265d312cc105184e252673fa28e2ef6868"
+    },
+    "work/revision/vendor/cluster-official/train/datasets/accel_dataset_mel.py": {
+      "bytes": 10283,
+      "sha256": "c21010972895d5b48d640d248a82a9a9d9512072225e3f53bbe222c094b7dcbd",
+      "git_blob_sha1": "c376109fbd91f37b1130b6277a44e188fd187a5f"
+    },
+    "work/revision/vendor/cluster-official/train/haptics_texture_classification.py": {
+      "bytes": 11917,
+      "sha256": "840a37fc8c4d5c07d31c3366db7255515a275f1bab0ef947ba840fa326455926",
+      "git_blob_sha1": "cb6983dbca75a7009db68dd32d751d544e69cc72"
+    }
+  }
+}

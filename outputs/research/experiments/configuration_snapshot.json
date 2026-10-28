@@ -1,0 +1,12 @@
+{
+  "description": "Human-readable export of the frozen implemented configuration; the runner's Python constants are authoritative. This snapshot is not read by the runner.",
+  "dataset": {"figshare_article":29438288,"version":5,"file":61118716,"specimens":118,"acquisitions":18880},
+  "source": {"speeds_mm_s":[30,40,50],"directions_degrees":[0,90,180,270],"load_mN":500,"training_repeats_separate":[0,1],"acquisitions_per_training_repeat":1416},
+  "validation":"leave one of three source speeds out; three folds within selected acquisition repeat only",
+  "signal":{"sampling_hz":6000,"interval":"central 1 second; secondary central 20 mm","welch_window":"hann","welch_nperseg":1024,"welch_noverlap":512,"axis_aggregation":"sum PSD","reference_edges_hz":[40,800],"log_bins":128,"log_floor":1e-12,"reference_speed_mm_s":40},
+  "classifier":{"family":"StandardScaler + RBF SVC","C":[1,10,100],"gamma_multiplier":[0.25,1,4],"gamma":"multiplier divided by feature dimension","beta":[0,0.25,0.5,0.75,1],"solver_cache_MB":256},
+  "statistics":{"primary":"repeat0, speed-only, spatial minus temporal macro accuracy","bootstrap_unit":"paired specimen","bootstrap_replicates":10000,"bootstrap_seed":20270912,"interval":"95% percentile","secondary":"descriptive"},
+  "perturbation":{"type":"synthetic speed-metadata error on real acquired acceleration","relative_error":[-0.1,-0.05,0.05,0.1],"training_repeat":0,"methods":["spatial","partial"]},
+  "posthoc":{"status":"exploratory, added after primary summaries","matched_grid_pairs":18,"model_fits":36},
+  "resource":{"compute_threads":2,"maximum_process_bytes":3000000000,"persistent_selection_evaluation_budget_seconds":5400,"paid_resources":0}
+}

@@ -1,0 +1,14 @@
+{
+  "synthetic_summary.csv": {
+    "source": "outputs/research_v2/experiments/calibrator_diagnostic/run_001/evaluation/summary.csv",
+    "sha256": "9e25086a440f47e5b85db2adcb4005dc6aec3388ecd1b71fb3332978246e1f0e"
+  },
+  "external_summary.json": {
+    "source": "outputs/research_v2/revision_20260914/analysis/summary.json",
+    "sha256": "8423df66306f4350c0ce4ba55f3f82145455daa7fbb9f019fd3c1897b527a63b"
+  },
+  "per_specimen_effects.csv": {
+    "source": "outputs/research_v2/revision_20260914/analysis/per_specimen_effects.csv",
+    "sha256": "5b804edf324861c5026d4de16964190065abc7871e045d4721f20180b18aeae7"
+  }
+}

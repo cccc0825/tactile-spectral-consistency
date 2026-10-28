@@ -1,0 +1,6 @@
+{
+  "timestamp_utc": "2026-09-12T08:40:51.584891+00:00",
+  "sha256": "795eb067adbfb1f5cf42de084010c434e327df4d53e2e016439368504c2a191c",
+  "stage": "before_classifier_fitting",
+  "reason": "independent_protocol_audit"
+}
